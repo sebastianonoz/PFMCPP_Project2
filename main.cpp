@@ -65,29 +65,29 @@ void variableDeclarations()
     //example:
     int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
 
-  int ballsInBasket = 20;
-  int coins = 9;
-  int gamesPlayed = 4;
+    int ballsInBasket = 20;
+    int coins = 9;
+    int gamesPlayed = 4;
 
-  float temperature = 72.5f;
-  float weight = 185.5f;
-  float distance = 0.5f;
+    float temperature = 72.5f;
+    float weight = 185.5f;
+    float distance = 0.5f;
 
-  double pi = 3.14159265358979323846;
-  double e = 2.71828182845904523536;
-  double speedOfLight = 299792458;
+    double pi = 3.14159265358979323846;
+    double e = 2.71828182845904523536;
+    double speedOfLight = 299792458;
 
-  char grade = 'A';
-  char grade2 = 'B';
-  char grade3 = 'C';
+    char grade = 'A';
+    char grade2 = 'B';
+    char grade3 = 'C';
 
-  bool isHappy = true;
-  bool flashLightOn = false;
-  bool isLoggedIn = true;
-
-  unsigned int x = 5;
-  unsigned int y = 10;
-  unsigned int z = 15;
+    bool isHappy = true;
+    bool flashLightOn = false;
+    bool isLoggedIn = true;
+  
+    unsigned int x = 5;
+    unsigned int y = 10;
+    unsigned int z = 15;
     
     
     ignoreUnused(number, ballsInBasket, coins, gamesPlayed, temperature, weight, distance, pi, speedOfLight, grade, grade2, grade3, isHappy, flashLightOn, isLoggedIn, x, y, z); //passing each variable declared to the ignoreUnused() function
@@ -107,14 +107,16 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
-bool addTwoNumbers (int a, int b) {
-  ignoreUnused(a, b);
-  return{};
+bool addTwoNumbers (int a, int b) 
+{
+    ignoreUnused(a, b);
+    return{};
 }
 /*
  2)
  */
-int multiplyNumbers(int firstNumber, int secondNumber) {
+int multiplyNumbers(int firstNumber, int secondNumber) 
+{
     ignoreUnused(firstNumber, secondNumber);
     return {};
 }
@@ -122,7 +124,8 @@ int multiplyNumbers(int firstNumber, int secondNumber) {
 /*
  3)
  */
-bool isNumberEven(int number) {
+bool isNumberEven(int number) 
+{
     ignoreUnused(number);
     return {};
 }
@@ -130,7 +133,8 @@ bool isNumberEven(int number) {
 /*
  4)
  */
-char toUpperCase(char letter) {
+char toUpperCase(char letter) 
+{
     ignoreUnused(letter);
     return {};
 }
@@ -138,7 +142,8 @@ char toUpperCase(char letter) {
 /*
  5)
  */
-bool isLetter(char letter) {
+bool isLetter(char letter) 
+{
     ignoreUnused(letter);
     return {};
 }
@@ -146,7 +151,8 @@ bool isLetter(char letter) {
 /*
  6)
  */
-bool isZero(int number) {
+bool isZero(int number) 
+{
     ignoreUnused(number);
     return {};
 }
@@ -154,7 +160,8 @@ bool isZero(int number) {
 /*
  7)
  */
-bool isLeapYear(int year) {
+bool isLeapYear(int year) 
+{
     ignoreUnused(year);
     return {};
 }
@@ -162,10 +169,11 @@ bool isLeapYear(int year) {
 /*
  8)
  */
-int findDistance(int x1, int y1, int x2, int y2) {
+int findDistance(int x1, int y1, int x2, int y2) 
+{
     ignoreUnused(x1, y1, x2, y2);
     return {};
-  }
+}
 /*
  9)
  */
@@ -177,7 +185,8 @@ bool isVowel(char letter) {
 /*
  10)
  */
-bool isPositive(float number) {
+bool isPositive(float number) 
+{
     ignoreUnused(number);
     return {};
 }
@@ -221,8 +230,7 @@ int main()
     //10)
     auto positiveNumber = isPositive(-2);
     
-    ignoreUnused(carRented, twoNumbersAdded, numbersMultiplied, evenNumberCheck, makeUpperCase,
-      checkIfLetter, equalsZero, leapYearCheck, distance, vowelCheck, positiveNumber);
+    ignoreUnused(carRented, twoNumbersAdded, numbersMultiplied, evenNumberCheck, makeUpperCase, checkIfLetter, equalsZero, leapYearCheck, distance, vowelCheck, positiveNumber);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
