@@ -90,7 +90,7 @@ void variableDeclarations()
     unsigned int z = 15;
     
     
-    ignoreUnused(number, ballsInBasket, coins, gamesPlayed, temperature, weight, distance, pi, speedOfLight, grade, grade2, grade3, isHappy, flashLightOn, isLoggedIn, x, y, z); //passing each variable declared to the ignoreUnused() function
+    ignoreUnused(number, ballsInBasket, coins, gamesPlayed, temperature, weight, distance, pi, e, speedOfLight, grade, grade2, grade3, isHappy, flashLightOn, isLoggedIn, x, y, z); //passing each variable declared to the ignoreUnused() function
 }
 
 /*
