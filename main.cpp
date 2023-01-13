@@ -177,7 +177,8 @@ int findDistance(int x1, int y1, int x2, int y2)
 /*
  9)
  */
-bool isVowel(char letter) {
+bool isVowel(char letter) 
+{
     ignoreUnused(letter);
     return {};
 }
